@@ -51,4 +51,4 @@ jobs:
              aws-session-token: ${{secrets.AWS_SESSION_TOKEN}}
              aws-region: us-east-1
       - name: list buckets
-        run: aws s3 list-buckets
+        run: aws s3api list-buckets
