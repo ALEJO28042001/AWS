@@ -24,6 +24,9 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.8'
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
@@ -32,4 +35,9 @@ jobs:
         run: |
           ls
           pwd
+      - name: install vistualenv and execute pytest
+        run: |
+          pip install virtualenv
+          virtualenv env
+          source env/bin/activate
 
