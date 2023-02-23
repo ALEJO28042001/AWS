@@ -34,7 +34,7 @@ jobs:
       - name: Listar archivos
         run: |
           ls
-          pwd
+          pwd 
       - name: install vistualenv and execute pytest
         run: |
           pip install virtualenv
