@@ -27,5 +27,8 @@ def es_primo(n):
     
     return True
 
+def cal_min(arreglo):
+    return min(arreglo)
+
    
 
